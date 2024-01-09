@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title> Projet Site HTML </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/css_index.CSS">
+        <style>
+            body {
+                transition: background-image 0.5s ease-in-out;
+                background-size: cover;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            main {
+                flex: 1; /* Permet au contenu principal de prendre le reste de l'espace */
+            }
+        </style>
+</head>
+    <body>
+        <header>
+            <br><h1>Classic Ressource Pack Creation</h1><br>
+        </header>
+        <main>
+            <aside> <!-- Barre de navigation simplifiée -->
+                <br /> <!-- Centrer les liens horizontalement-->
+                <p1><a href="index.html"> Home</a></p1>
+                <p2><a href="p1_rpc.html"> Classics Ressource Packs</a></p2>
+                <p3><a href="p2_rpm.html"> Models Ressource Packs</a></p3>
+                <p4><a href="lp_help.html"> Help </a></p4>
+            </aside>
+            <div class="main-block-info"> <!-- Block principal -->
+                    <h2 class="main"> <font color=green>Before you start creating your ressource pack, you will need a few things.</font> </h2>
+                    <h3> <font color=brown> For this one you will need :</font></h3>
+                <div class="link-list">
+                        <ul> <!-- Nécéssitées -->
+                            <li> <h3> A modeling software such as BlockBench (Heavily recommended for this process). </h3></li>
+                            <li> <h3> A code editing software such as Notepad++. </h3></li>
+                            <li> <h3> A compressing software such as WinRAR. </h3></li>
+                            <li> <h3> <a href="./dl/RessourcePackSetupClassic&Models.zip" download="RessourcePackSetupClassic&Models"> The Ressource Pack file</a></h3></li>
+                        </ul>
+                    <p2> <!-- Tutoriel -->
+                        <strong>Step 1:</strong> <br />
+                        Go in the ressource pack folder and right clic on the pack.mcmeta file, then select to edit with Notepad++.<br /> (Or your code editing software)<br />
+
+                        <strong>Step 2:</strong> <br />
+                        Edit the "pack_format" number according to the version you want to have your texture pack in.<br /> To get the number, check the first spreadsheet <a href="https://minecraft.fandom.com/wiki/Pack_format"> here</a>.<br />
+
+                        <strong>Step 3:</strong> <br />
+                        Open your modeling software and create the model you want to use. Do not forget to do the display and texture.<br />
+
+                        <strong>Step 4:</strong> <br />
+                        Save your texture first, either on your desktop or somewhere you can find it easily <br />
+
+                        <strong>Step 5:</strong> <br />
+                        Export your model as a minecraft block/item, also somewhere you can find it easily <br />
+
+                        <strong>Step 6:</strong> <br />
+                        Your texture file should be a .png file and your model should be a .json file. <br />
+
+                        <strong>Step 7:</strong> <br />
+                        Open your ressource pack folder and put your .json file in assets/minecraft/models/item <br /> and rename it after the item you want to replace. (Here i'll take the example of the netherite sword : netherite_sword.json) <br />
+
+                        <strong>Step 8:</strong> <br />
+                        Put your .png file in assets/minecraft/textures/item and rename it after the item you want to replace.<br /> (Here i'll take the example of the netherite sword again: netherite_sword.png) <br />
+
+                        <strong>Step 9:</strong> <br/>
+                        The files should connect each other so you can open your game,<br /> go in the settings, open your ressource pack folder through the game and drag your ressource pack in the folder and enable it. <br />
+                        <font color="red">If the texture appears pink and black ou if the model appears as a big black and pink cube, go to <a href="lp_help.html">the Help page</a></font>
+                    </p2>
+                </div class="link-list">
+            </div class="main-block-info">
+        </main>
+
+    <label for="wordInput">Where do piglins live ?:</label>
+    <input type="text" id="wordInput">
+    
+        <script>
+            document.getElementById('wordInput').addEventListener('input', function() {
+                var enteredWord = this.value.toLowerCase();
+                
+                // Check if the entered word is "nether"
+                if (enteredWord === 'nether') {
+                    document.body.style.backgroundImage = 'url("./img/nbg.png")';
+                } else {
+                    // Reset the background image if the entered word is not "nether"
+                    document.body.style.backgroundImage = 'none';
+                }
+            });
+        </script>
+    </body>
+</html>

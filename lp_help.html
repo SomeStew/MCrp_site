@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title> Projet Site HTML </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/css_index.CSS" >
+        <style>
+            body {
+                transition: background-image 0.5s ease-in-out;
+                background-size: cover;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            main {
+                flex: 1; /* Permet au contenu principal de prendre le reste de l'espace */
+            }
+        </style>
+</head>
+    <body>
+        <header>
+            <br><h1>Help Page</h1><br>
+        </header>
+        <main>
+            <aside> <!-- Barre de navigation simplifiée -->
+                <br /> <!-- Centrer les liens horizontalement-->
+                <p1><a href="index.html"> Home</a></p1>
+                <p2><a href="p1_rpc.html"> Classics Ressource Packs</a></p2>
+                <p3><a href="p2_rpm.html"> Models Ressource Packs</a></p3>
+                <p4><a href="lp_help.html"> Help </a></p4>
+            </aside>
+            <div class="main-block-info">
+                    <h2><font color="green"> Got some issues with your ressource pack ? </font></h2>
+                    <h3><font color="brown"> This page is here to help as much as possible. </font></h3>
+                <div class="link-list">
+                    <ul>
+                        <li><h3>For both: </h3></li>
+                            <p5> - Verify for any typos or file misplacement, these can happen easily and often break everything</p5>
+                        <li><h3>For the Classic ressource pack: </h3></li>
+                            <p5> - The only error that can truly affect this file is the number of the "pack_format",<br /> and sometimes it doesn't even matter.</p5>
+                        <li><h3>For the model ressource pack:</h3></li>
+                            <p5> - Open the .json file with your code editing software and make sure that the "texture" path is :<br /> item/netherite_sword (or the item you want to change)</p5> <br />
+                            <p5> - Try saving the model first and then the texture in BlockBench</p5> <br />
+                            <p5> - If none of these help you, you can seek help from the <a href="https://discord.gg/blockbench">BlockBench Discord Server</a>.</p5>
+                        <li><h3>Extras:</h3></li>
+                            <p5> - <a href="https://www.youtube.com/watch?v=QhPzgpapOWE">BlockBench Tutorial</a></p5>
+                    </ul>
+                </div class="link-list">
+
+            </div class="main-block-info">
+        </main>
+    <label for="wordInput">Where do piglins live ?:</label>
+    <input type="text" id="wordInput">
+    
+        <script>
+            document.getElementById('wordInput').addEventListener('input', function() {
+                var enteredWord = this.value.toLowerCase();
+                
+                // Check if the entered word is "nether"
+                if (enteredWord === 'nether') {
+                    document.body.style.backgroundImage = 'url("./img/nbg.png")';
+                } else {
+                    // Reset the background image if the entered word is not "nether"
+                    document.body.style.backgroundImage = 'none';
+                }
+            });
+        </script>
+    </body>
+</html>

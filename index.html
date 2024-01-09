@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <title> Projet Site HTML </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/css_index.CSS">
+            <style>
+            body {
+                transition: background-image 0.5s ease-in-out;
+                background-size: cover;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            main {
+                flex: 1; /* Permet au contenu principal de prendre le reste de l'espace */
+            }
+            </style>
+    </head>
+<body>
+    <header> 
+        <br><h1>Welcome to the Ressource Pack Tutorial Site</h1><br>
+    </header>
+    <main>
+        <aside> <!-- Barre de navigation simplifiée -->
+            <br /> <!-- Centrer les liens horizontalement-->
+            <p1><a href="index.html"> Home</a></p1>
+            <p2><a href="p1_rpc.html"> Classics Ressource Packs</a></p2>
+            <p3><a href="p2_rpm.html"> Models Ressource Packs</a></p3>
+            <p4><a href="lp_help.html"> Help </a></p4>
+        </aside>
+        <div class="main-block-info">
+                <h2 class="main"> <font color=green>Hello there, fellow minecrafter!</font> </h2>
+                <h2> <font color=brown>You want to customise your minecraft experience?</font> </h2>
+                <h2> <font color=brown>We got you covered! </font> </h2>
+                <p5> <font color=brown> Here, you will find how to make your own ressource packs! </font> </p5>
+                <p6> <font color=brown> If you have any issues, you can go to our help page. </font> </p6>
+            <div class="link-list">
+                <ul>
+                    <li> <h3><a href="p1_rpc.html"> Classics Ressource Packs</a> </h3></li>
+                    <li> <h3><a href="p2_rpm.html"> Models Ressource Packs</a> </h3></li>
+                    <!-- <li> <h3><a href="p3_rpnm.html"> Named Models Ressource Packs</a> </h3></li> -->
+                    <!-- <li> <h3><a href="p4_rpa.html"> Animated Ressource Packs</a> </h3></li> -->
+                </ul>
+            </div class="link-list">
+                <p7> <font color=brown>Having trouble with something?</font></p7>
+                <p8> <font color=brown>Go see the piglins! They might have a solution!</font></p8>
+                <a href="lp_help.html"> <img src="./img/np_hp.png" alt="Nether Portal"> </a>
+        </div class="main-block-info">
+    </main>
+
+<label for="wordInput">Where do piglins live ?:</label>
+<input type="text" id="wordInput">
+
+    <script>
+        document.getElementById('wordInput').addEventListener('input', function() {
+            var enteredWord = this.value.toLowerCase();
+            
+            // Check if the entered word is "nether"
+            if (enteredWord === 'nether') {
+                document.body.style.backgroundImage = 'url("./img/nbg.png")';
+            } else {
+                // Reset the background image if the entered word is not "nether"
+                document.body.style.backgroundImage = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

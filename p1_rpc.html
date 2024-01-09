@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title> Projet Site HTML </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/css_index.CSS" >    
+        <style>
+            body {
+                transition: background-image 0.5s ease-in-out;
+                background-size: cover;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            main {
+                flex: 1; /* Permet au contenu principal de prendre le reste de l'espace */
+            }
+        </style>
+</head>
+    <body>
+        <header>
+            <br><h1>Classic Ressource Pack Creation</h1><br>
+        </header>
+        <main>
+            <aside> <!-- Barre de navigation simplifiée -->
+                <br /> <!-- Centrer les liens horizontalement-->
+                <p1><a href="index.html"> Home</a></p1>
+                <p2><a href="p1_rpc.html"> Classics Ressource Packs</a></p2>
+                <p3><a href="p2_rpm.html"> Models Ressource Packs</a></p3>
+                <p4><a href="lp_help.html"> Help </a></p4>
+            </aside>
+            <div class="main-block-info">
+                    <h2 class="main"> <font color=green>Before you start creating your ressource pack, you will need a few things.</font> </h2>
+                    <h3> <font color=brown> For this one you will need :</font></h3>
+                <div class="link-list">
+                    <ul>
+                        <li> <h3> An image editing software such as Paint. </h3></li>
+                        <li> <h3> A code editing software such as Notepad++. </h3></li>
+                        <li> <h3> A compressing software such as WinRAR. </h3></li>
+                        <li> <h3> A copy of the vanilla texture you want to change.</h3></li>
+                        <li> <h3> <a href="./dl/RessourcePackSetupClassic&Models.zip" download="RessourcePackSetupClassic&Models"> The Ressource Pack file</a></h3></li>
+                    </ul>
+
+                        <p1><balise id="vt_get"> How to get the vanilla textures ? </balise></p1>
+                    <p> 
+                        <font color="red">
+                        To get the vanilla texture, do the windows key + r, then enter %appdata%.<br />
+                        Go in the <strong>.minecraft</strong> folder and then in the <strong>version</strong> folder.<br />
+                        Select the version where you want to use your texture pack and copy the .jar file somewhere<br /> else (like your desktop) and unzip it (using your compressing software) by right clicking on it.
+                        </font>
+                    </p>
+
+                    <p2>
+                        <strong>Step 1:</strong> <br />
+                        Go in the ressource pack folder and right clic on the pack.mcmeta file,<br /> then select to edit with Notepad++ or your code editing software.<br />
+                        <strong>Step 2:</strong> <br />
+                        Edit the "pack_format" number according to the version you want to have your texture pack in.<br /> To get the number, check the first spreadsheet <a href="https://minecraft.fandom.com/wiki/Pack_format"> here</a>.<br />
+                        <strong>Step 3:</strong> <br />
+                        Open your image editing software and create the texture you want to use.<br /> You can start from a copy of the vanilla texture.<br />
+                        <strong>Step 4:</strong> <br />
+                        Follow this path in your ressource pack folder : ./assets/minecraft/textures/item and place your texture here. <br />
+                        <strong>Step 5:</strong> <br />
+                        Make sure your texture is a .png file and rename it to the name of the item you want to replace. <br />Example: to replace the netherite sword, name your texture netherite_sword.<br />
+                        <strong>Step 6:</strong> <br />
+                        Open your game, go in the settings,<br /> open your ressource pack folder through the game and drag your ressource pack in the folder and enable it.
+                        
+                    </p2>
+
+                </div class="link-list">
+
+                <h3><font color="lime">Enjoy your texture pack !</font></h3>
+            </div class="main-block-info">
+
+        </main>
+    <label for="wordInput">Where do piglins live ?:</label>
+    <input type="text" id="wordInput">
+    
+        <script>
+            document.getElementById('wordInput').addEventListener('input', function() {
+                var enteredWord = this.value.toLowerCase();
+                
+                // Check if the entered word is "nether"
+                if (enteredWord === 'nether') {
+                    document.body.style.backgroundImage = 'url("./img/nbg.png")';
+                } else {
+                    // Reset the background image if the entered word is not "nether"
+                    document.body.style.backgroundImage = 'none';
+                }
+            });
+        </script>
+    </body>
+</html>

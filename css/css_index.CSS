@@ -1,0 +1,123 @@
+html {
+    background-color: #78A7FF;
+}
+body {
+    margin: 0 0 0 0;
+}
+header {
+    width:100%;
+    margin-bottom: 0px;
+
+    color: greenyellow;
+    text-align: center;
+
+    background-image:url(../img/header-bg.png);
+    image-rendering: auto;
+
+}
+aside {
+    width: 100%;
+    margin-bottom: 25px;
+    min-height: 60px;
+
+    border-right-color:black;
+    border-left-color:black;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+
+    background-image:url(../img/sw_a.png);
+    background-color: rgb(85, 85, 85);
+    image-rendering:auto;
+
+    p1 {                        /* Centrage horizontal des liens*/
+        margin-left: 10%;
+    }
+    p2 {
+        margin-left: 10%;
+    }
+    p3 {
+        margin-left: 10%;
+    }
+    p4 {
+        margin-left: 10%;
+    }
+
+    p1:link {                   /* Coloration 1er lien */
+        color: #ffffff;
+    }
+    p1:visited {
+        color: #2aaa14;
+    }
+    p1:hover {
+        color: #99ff9b;
+    }
+    p1:active {
+        color: #2aaa14;
+    }
+
+    p2:link {                   /* Coloration 2eme lien */
+        color: #ffffff;
+    }
+    p2:visited {
+        color: #2aaa14;
+    }
+    p2:hover {
+        color: #99ff9b;
+    }
+    p2:active {
+        color: #2aaa14;
+    }
+
+    p3:link {                   /* Coloration 3eme lien */
+        color: #ffffff;
+    }
+    p3:visited {
+        color: #2aaa14;
+    }
+    p3:hover {
+        color: #99ff9b;
+    }
+    p3:active {
+        color: #2aaa14;
+    }
+
+    p4:link {                   /* Coloration 4eme lien */
+        color: #ffffff;
+    }
+    p4:visited {
+        color: #2aaa14;
+    }
+    p4:hover {
+        color: #99ff9b;
+    }
+    p4:active {
+        color: #2aaa14;
+    }
+}
+
+.main-block-info{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    background-color: #ffffff;
+    
+    padding-left: 50px ;
+    padding-right: 50px ;
+    padding-top: 50px ;
+    padding-bottom: 50px ;
+    
+}
+.link-list {
+    text-align: left;
+}
+
+
+
